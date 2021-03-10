@@ -1,0 +1,66 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "h h"
+  "s s"
+  "a a"
+  "f f";
+  grid-gap: 5px 5px;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    grid-template-areas:
+    "h h"
+    "s a"
+    "f f";
+}
+  }
+/*
+  @media screen and (min-width: 700px) {
+    body {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas:
+      grid-gap: 5px;
+  }
+    }
+*/
+p {
+  color: black;
+}
+
+body {
+  background-color:lightBlue;
+}
+
+header {
+  background-color: yellow;
+  grid-area: h;
+}
+
+section {
+  background-color: red;
+  grid-area: s;
+}
+
+aside {
+  background-color: blue;
+  grid-area: a;
+}
+
+footer {
+  background-color: green;
+  grid-area: f;
+}
+
+
+img#sea {
+  width: auto;
+  max-width: ;
+}
+
+img#html {
+  width: auto;
+  max-width: 600px;
+}
